@@ -6,21 +6,25 @@ using System;
 
 public class Shop_Manager : MonoBehaviour
 {
-    [SerializeField] private List<ShopItems> shopItems;
+    //[SerializeField] private List<ShopItems> shopItems;
 
     [SerializeField] private Shop_Slot[] shopSlots;
 
     [SerializeField] private Inventory_Manager inventoryManager;
 
-    public static event Action<Shop_Manager, bool> OnShopStateChanged;
+    //public static event Action<Shop_Manager, bool> OnShopStateChanged;
+
+    public CanvasGroup shopCanvasGroup;
 
     private void Start()
     {
-        PopulateShopItems();
-        OnShopStateChanged?.Invoke(this, true);
+        shopCanvasGroup.alpha = 0;
+        shopCanvasGroup.blocksRaycasts = false;
+        shopCanvasGroup.interactable = false;
+
     }
 
-    public void PopulateShopItems()
+    public void PopulateShopItems(List<ShopItems> shopItems)
     {
         for (int i = 0; i < shopItems.Count && i < shopSlots.Length; i++)
         {
