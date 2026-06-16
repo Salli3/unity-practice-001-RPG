@@ -79,6 +79,7 @@ public class Shop_Info : MonoBehaviour
         itemNameText.text = "";
         itemDescriptionText.text = "";
 
+        //disable info in info panel
         for (int i = 0; i < statTexts.Length; i++)
         {
             statTexts[i].gameObject.SetActive(false);

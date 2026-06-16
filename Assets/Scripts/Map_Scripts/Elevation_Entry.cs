@@ -7,6 +7,9 @@ public class Elevation_Entry : MonoBehaviour
     public Collider2D[] mountainColliders;
     //public Collider2D[] boundaryColliders;
     public EdgeCollider2D[] boundaryColliders;
+
+    public GameObject arrowPrefab;
+
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Player")
@@ -27,6 +30,7 @@ public class Elevation_Entry : MonoBehaviour
             }
 
             collision.gameObject.GetComponent<SpriteRenderer>().sortingOrder = 15;
+            arrowPrefab.GetComponent<SpriteRenderer>().sortingOrder = 15;
         }
 
         if (collision.gameObject.tag == "Enemy")

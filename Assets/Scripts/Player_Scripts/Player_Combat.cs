@@ -45,6 +45,7 @@ public class Player_Combat : MonoBehaviour
 
      private void OnDrawGizmosSelected()
     {
+        if (attackPoint == null) return;
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(attackPoint.position, Stats_Manager.instance.attackRange);
     }
