@@ -89,6 +89,8 @@
     <Compile Include="Assets\Scripts\Inventory_And_Shop\Shop\Shop_Info.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
     <Compile Include="Assets\Scripts\Player_Scripts\Stats_Manager.cs" />
+    <Compile Include="Assets\Scripts\NPC_Scripts\NPC_Wander.cs" />
+    <Compile Include="Assets\Scripts\NPC_Scripts\NPC_Patrol.cs" />
     <Compile Include="Assets\Scripts\Enemy_Scripts\Enemy_Combat.cs" />
     <Compile Include="Assets\Scripts\Enemy_Scripts\Enemy_HP.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
