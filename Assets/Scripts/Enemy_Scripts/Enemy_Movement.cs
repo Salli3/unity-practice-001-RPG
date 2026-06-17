@@ -14,7 +14,6 @@ public class Enemy_Movement : MonoBehaviour
     public LayerMask playerLayer;
 
     private float attackCooldownTimer;
-    private int facingDirection = -1;
     private EnemyState enemyState;
 
     private Rigidbody2D rb;
@@ -54,8 +53,8 @@ public class Enemy_Movement : MonoBehaviour
 
     void Chase()
     {
-        if (player.position.x > transform.position.x && facingDirection == -1 ||
-                player.position.x < transform.position.x && facingDirection == 1)
+        if (player.position.x > transform.position.x && transform.localScale.x < 0 ||
+            player.position.x < transform.position.x && transform.localScale.x > 0)
         {
             Flip();
         }
@@ -77,7 +76,6 @@ public class Enemy_Movement : MonoBehaviour
 
     void Flip()
     {
-        facingDirection *= -1;
         transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
     }
 
