@@ -12,15 +12,18 @@ public class NPC_Patrol : MonoBehaviour
     private bool isPaused;
     private Vector2 target;
     private int currentPatrolIndex;
-    private int facingDirection = 1;
 
     private Rigidbody2D rb;
     private Animator anim;
 
-    private void Start()
+    private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponentInChildren<Animator>();
+    }
+
+    private void OnEnable()
+    {
         StartCoroutine(SetPatrolPoint());
     }
 
@@ -29,27 +32,32 @@ public class NPC_Patrol : MonoBehaviour
         if (isPaused)
         {
             rb.velocity = Vector2.zero;
+            return;
         }
-        else
-        {
-            if (target.x > transform.position.x && facingDirection == -1 ||
-                target.x < transform.position.x && facingDirection == 1)
-            {
-                Flip();
-            }
 
-            Vector2 direction = ((Vector3)target - transform.position).normalized;
-            rb.velocity = direction * speed;
-            if (Vector2.Distance(transform.position, target) < 0.1f && isPaused == false)
-            {
-                StartCoroutine(SetPatrolPoint());
-            }
+        if (Vector2.Distance(transform.position, target) < 0.1f && isPaused == false)
+        {
+            StartCoroutine(SetPatrolPoint());
         }
+
+        Move();
+    }
+
+    private void Move()
+    {
+        Vector2 direction = (target - (Vector2)transform.position).normalized;
+
+        if (direction.x > 0 && transform.localScale.x < 0 ||
+            direction.x < 0 && transform.localScale.x > 0)
+        {
+            Flip();
+        }
+
+        rb.velocity = direction * speed;
     }
 
     void Flip()
     {
-        facingDirection *= -1;
         transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
     }
 
