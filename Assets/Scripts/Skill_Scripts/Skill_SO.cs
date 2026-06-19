@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO.Enumeration;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "NewSkill", menuName = "SkillTree/Skill")]
+[CreateAssetMenu(fileName = "SkillSO")]
 public class Skill_SO : ScriptableObject
 {
     public string skillName;

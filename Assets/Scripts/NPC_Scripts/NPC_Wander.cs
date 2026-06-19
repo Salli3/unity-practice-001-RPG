@@ -29,6 +29,11 @@ public class NPC_Wander : MonoBehaviour
         StartCoroutine(PauseAndPickNewDestination());
     }
 
+    private void OnDisable()
+    {
+        StopAllCoroutines();
+    }
+
     private void Update()
     {
         if (isPaused)
@@ -47,7 +52,10 @@ public class NPC_Wander : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        StartCoroutine (PauseAndPickNewDestination());
+        if (enabled)
+        {
+            StartCoroutine(PauseAndPickNewDestination());
+        }
     }
 
     private void Move()

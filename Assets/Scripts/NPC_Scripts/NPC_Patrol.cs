@@ -27,6 +27,11 @@ public class NPC_Patrol : MonoBehaviour
         StartCoroutine(SetPatrolPoint());
     }
 
+    private void OnDisable()
+    {
+        StopAllCoroutines();
+    }
+
     private void Update()
     {
         if (isPaused)
