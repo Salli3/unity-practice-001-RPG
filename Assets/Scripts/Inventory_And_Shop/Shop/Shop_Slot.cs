@@ -18,6 +18,14 @@ public class Shop_Slot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
     [SerializeField] private Shop_Manager shopManager;
     [SerializeField] private Shop_Info shopInfo;
 
+    public Button buyButton;
+
+    private void Awake()
+    {
+        buyButton = GetComponent<Button>();
+        buyButton.onClick.AddListener(OnBuyButtonClicked);
+    }
+
     public void Initialize(Item_SO newItemSO, int price)
     {
         //fill slot with info

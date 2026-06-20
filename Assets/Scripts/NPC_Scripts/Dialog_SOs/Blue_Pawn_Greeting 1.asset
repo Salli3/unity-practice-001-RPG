@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3b99683820276d439f8e0f4976e5588, type: 3}
+  m_Name: Blue_Pawn_Greeting 1
+  m_EditorClassIdentifier: 
+  lines:
+  - speaker: {fileID: 11400000, guid: 92de567174626614181af8badc8ea332, type: 2}
+    text: Waza?
+  - speaker: {fileID: 11400000, guid: 8a01a396ee73aed4f8279c32093b96f1, type: 2}
+    text: Wazaaaaaaa!
+  - speaker: {fileID: 11400000, guid: 92de567174626614181af8badc8ea332, type: 2}
+    text: WAZAAAAAAAAAAAAAAAAAAAA!!!
+  options: []

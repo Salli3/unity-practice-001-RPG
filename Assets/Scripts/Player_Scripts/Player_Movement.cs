@@ -28,6 +28,11 @@ public class Player_Movement : MonoBehaviour
     // FixedUpdate is called 50x per frame
     void FixedUpdate()
     {
+        if (Stats_Manager.instance == null)
+        {
+            return;
+        }
+
         if (isKnockedBack == true)
         {
             return;
