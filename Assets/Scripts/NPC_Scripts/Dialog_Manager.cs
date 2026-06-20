@@ -49,11 +49,13 @@ public class Dialog_Manager : MonoBehaviour
         ShowDialog();
     }
 
-    public void ShowDialog()
+    private void ShowDialog()
     {
         if (currentDialogIndex < currentDialog.lines.Length)
         {
-            DialogLine line = currentDialog.lines[currentDialogIndex];
+            Dialog_Line line = currentDialog.lines[currentDialogIndex];
+
+            Dialog_History_Tracker.instance.RecordNPC(line.speaker);
 
             portrait.sprite = line.speaker.portrait;
             actorName.text = line.speaker.actorName;
@@ -68,6 +70,12 @@ public class Dialog_Manager : MonoBehaviour
             if (currentDialogIndex == currentDialog.lines.Length)
             {
                 ShowChoices();
+            }
+            else
+            {
+                choiceButtons[0].GetComponentInChildren<TMP_Text>().text = "Next";
+                choiceButtons[0].onClick.AddListener(ShowDialog);
+                choiceButtons[0].gameObject.SetActive(true);
             }
         }
     }
