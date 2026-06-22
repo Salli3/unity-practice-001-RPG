@@ -6,7 +6,7 @@ public class Dialog_History_Tracker : MonoBehaviour
 {
     public static Dialog_History_Tracker instance;
 
-    private readonly List<Actor_SO> spokenNPCs = new List<Actor_SO>();
+    private readonly HashSet<Actor_SO> spokenNPCs = new HashSet<Actor_SO>();
 
     private void Awake()
     {

@@ -53,13 +53,14 @@ public class NPC_Talk : MonoBehaviour
 
     private void CheckForNewConversation()
     {
-        for (int i = conversations.Count - 1; i >= 0 ; i--)
+        for (int i = 0; i < conversations.Count; i++)
         {
             var conversation = conversations[i];
             if (conversation != null && conversation.IsConditionMet())
             {
                 conversations.RemoveAt(i);
                 currentConversation = conversation;
+                return;
             }
         }
     }

@@ -8,26 +8,37 @@ public class Dialog_SO : ScriptableObject
 
     [Header("Conditional Requirements (Optional)")]
     public Actor_SO[] requiredNPCs;
+    public Location_SO[] requiredLocations;
 
     //TODO:
     //Items
-    //Locations
 
     public bool IsConditionMet()
     {
-        if(requiredNPCs.Length > 0)
+        if (requiredNPCs.Length > 0)
         {
             foreach (var npc in requiredNPCs)
             {
                 //check if history tracker have this npc
-                if(Dialog_History_Tracker.instance.HasSpokenWith(npc) == false)
+                if (Dialog_History_Tracker.instance.HasSpokenWith(npc) == false)
+                {
+                    return false;
+                }
+            }
+        }
+        if (requiredLocations.Length > 0)
+        {
+            foreach (var location in requiredLocations)
+            {
+                //check if history tracker have this location
+                if (Location_History_Tracker.instance.HasVisited(location) == false)
                 {
                     return false;
                 }
             }
         }
         //Check for items
-        //Check for locations
+
 
         return true;
     }
