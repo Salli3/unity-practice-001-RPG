@@ -53,13 +53,17 @@ public class NPC_Talk : MonoBehaviour
 
     private void CheckForNewConversation()
     {
+        Debug.Log("Checking for new convo");
         for (int i = 0; i < conversations.Count; i++)
         {
+            Debug.Log("Start for loop");
             var conversation = conversations[i];
+            Debug.Log("Check convo: " +  conversation.name);
             if (conversation != null && conversation.IsConditionMet())
             {
                 conversations.RemoveAt(i);
                 currentConversation = conversation;
+                Debug.Log("Set convo to: " + currentConversation.name);
                 return;
             }
         }

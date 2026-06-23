@@ -30,6 +30,7 @@ public class Location_History_Tracker : MonoBehaviour
 
     public bool HasVisited(Location_SO locationSO)
     {
+        Debug.Log("Checked: " + locationSO.locationName);
         return locationsVisited.Contains(locationSO);
     }
 }

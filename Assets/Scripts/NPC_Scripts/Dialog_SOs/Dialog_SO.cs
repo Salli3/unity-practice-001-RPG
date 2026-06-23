@@ -15,6 +15,7 @@ public class Dialog_SO : ScriptableObject
 
     public bool IsConditionMet()
     {
+        Debug.Log(requiredLocations == null ? "required location is null" : "required location is not null");
         if (requiredNPCs.Length > 0)
         {
             foreach (var npc in requiredNPCs)
@@ -26,17 +27,21 @@ public class Dialog_SO : ScriptableObject
                 }
             }
         }
-        if (requiredLocations.Length > 0)
+        Debug.Log("NPC true");
+        if (requiredLocations != null && requiredLocations.Length > 0)
         {
+            Debug.Log("Have required location");
             foreach (var location in requiredLocations)
             {
                 //check if history tracker have this location
                 if (Location_History_Tracker.instance.HasVisited(location) == false)
                 {
+                    Debug.Log("Have not been to: " +  location.locationName);
                     return false;
                 }
             }
         }
+        Debug.Log("Location true");
         //Check for items
 
 

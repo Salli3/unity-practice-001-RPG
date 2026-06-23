@@ -22,3 +22,6 @@ MonoBehaviour:
     nextDialog: {fileID: 11400000, guid: 8844088d170264a499d5f2b71458795e, type: 2}
   - optionText: You again?
     nextDialog: {fileID: 11400000, guid: ce2a8f59f6de2094dace9fdf5c36e590, type: 2}
+  requiredNPCs: []
+  requiredLocations:
+  - {fileID: 11400000, guid: 189e71f72570e0e4ea2254049e947fc0, type: 2}
