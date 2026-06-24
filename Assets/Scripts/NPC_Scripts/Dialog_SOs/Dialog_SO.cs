@@ -9,13 +9,11 @@ public class Dialog_SO : ScriptableObject
     [Header("Conditional Requirements (Optional)")]
     public Actor_SO[] requiredNPCs;
     public Location_SO[] requiredLocations;
-
-    //TODO:
-    //Items
+    public Item_SO[] requiredItems;
 
     public bool IsConditionMet()
     {
-        Debug.Log(requiredLocations == null ? "required location is null" : "required location is not null");
+        //Debug.Log(requiredLocations == null ? "required location is null" : "required location is not null");
         if (requiredNPCs.Length > 0)
         {
             foreach (var npc in requiredNPCs)
@@ -27,22 +25,33 @@ public class Dialog_SO : ScriptableObject
                 }
             }
         }
-        Debug.Log("NPC true");
+        //Debug.Log("NPC true");
+
         if (requiredLocations != null && requiredLocations.Length > 0)
         {
-            Debug.Log("Have required location");
+            //Debug.Log("Have required location");
             foreach (var location in requiredLocations)
             {
                 //check if history tracker have this location
                 if (Location_History_Tracker.instance.HasVisited(location) == false)
                 {
-                    Debug.Log("Have not been to: " +  location.locationName);
+                    //Debug.Log("Have not been to: " +  location.locationName);
                     return false;
                 }
             }
         }
-        Debug.Log("Location true");
-        //Check for items
+        //Debug.Log("Location true");
+
+        if(requiredItems != null && requiredItems.Length > 0)
+        {
+            foreach (var item in requiredItems)
+            {
+                if (Inventory_Manager.instance.HasItem(item) == false)
+                {
+                    return false;
+                }
+            }
+        }
 
 
         return true;

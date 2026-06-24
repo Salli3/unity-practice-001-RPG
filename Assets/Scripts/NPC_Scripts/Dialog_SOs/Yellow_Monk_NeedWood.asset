@@ -10,15 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d3b99683820276d439f8e0f4976e5588, type: 3}
-  m_Name: Yellow_Monk_Greeting
+  m_Name: Yellow_Monk_NeedWood
   m_EditorClassIdentifier: 
   lines:
   - speaker: {fileID: 11400000, guid: 55954d1660b059e4aa567eb037dc5ce1, type: 2}
-    text: Find my brother, you must
+    text: I need some wood fam
   - speaker: {fileID: 11400000, guid: 92de567174626614181af8badc8ea332, type: 2}
-    text: Who is your brother?
-  - speaker: {fileID: 11400000, guid: 55954d1660b059e4aa567eb037dc5ce1, type: 2}
-    text: Blue Pawn
+    text: OK
   options: []
   requiredNPCs: []
   requiredLocations: []

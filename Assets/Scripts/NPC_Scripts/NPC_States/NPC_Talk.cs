@@ -64,7 +64,7 @@ public class NPC_Talk : MonoBehaviour
                 conversations.RemoveAt(i);
                 currentConversation = conversation;
                 Debug.Log("Set convo to: " + currentConversation.name);
-                return;
+                break;
             }
         }
     }
