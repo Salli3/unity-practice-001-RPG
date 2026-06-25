@@ -68,7 +68,7 @@ public class Inventory_Manager : MonoBehaviour
         foreach (var slot in itemSlots)
         {
             //check if there is another same item in inventory
-            if(slot.itemSO == itemSO) //&& itemSO.stackSize -> scrap this idea
+            if (slot.itemSO == itemSO) //&& itemSO.stackSize -> scrap this idea
             {
                 //int availableSpace = itemSO.stackSize - slot.quantity;
                 //int amountToAdd = Mathf.Min(availableSpace, quantity);
@@ -161,11 +161,24 @@ public class Inventory_Manager : MonoBehaviour
     {
         foreach (var slot in itemSlots)
         {
-            if(slot.itemSO == itemSO && slot.quantity > 0)
+            if (slot.itemSO == itemSO && slot.quantity > 0)
             {
                 return true;
             }
         }
         return false;
+    }
+
+    public int GetItemQuantity(Item_SO itemSO)
+    {
+        int total = 0;
+        foreach (var slot in itemSlots)
+        {
+            if (slot.itemSO == itemSO)
+            {
+                total += slot.quantity;
+            }
+        }
+        return total;
     }
 }
