@@ -281,13 +281,14 @@ GameObject:
   - component: {fileID: 1707449970327484426}
   - component: {fileID: 2793417881133697664}
   - component: {fileID: 5017671863695980527}
+  - component: {fileID: 4964166314468917017}
   m_Layer: 5
   m_Name: Quest_Slot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2976497439705846915
 RectTransform:
   m_ObjectHideFlags: 0
@@ -417,3 +418,20 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!114 &4964166314468917017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7528572400343000530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 896b61b587ef7dc4e9538da5f9d0dcc6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questNameText: {fileID: 205586608218278951}
+  questProgressText: {fileID: 4920547244709202616}
+  currentQuest: {fileID: 0}
+  questLogUI: {fileID: 0}
+  questButton: {fileID: 0}
