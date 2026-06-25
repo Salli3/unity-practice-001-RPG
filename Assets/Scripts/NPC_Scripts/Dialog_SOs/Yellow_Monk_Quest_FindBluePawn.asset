@@ -10,17 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d3b99683820276d439f8e0f4976e5588, type: 3}
-  m_Name: Yellow_Monk_FOUND_NeedWood
+  m_Name: Yellow_Monk_Quest_FindBluePawn
   m_EditorClassIdentifier: 
   lines:
   - speaker: {fileID: 11400000, guid: 55954d1660b059e4aa567eb037dc5ce1, type: 2}
-    text: Have you found my wood
+    text: Find my brother, you must
   - speaker: {fileID: 11400000, guid: 92de567174626614181af8badc8ea332, type: 2}
-    text: Here you go
+    text: Who is your brother?
   - speaker: {fileID: 11400000, guid: 55954d1660b059e4aa567eb037dc5ce1, type: 2}
-    text: Thanks, now screw off
+    text: Blue Pawn
   options: []
   requiredNPCs: []
   requiredLocations: []
-  requiredItems:
-  - {fileID: 11400000, guid: 9dae1c343a89f494fb538c2a9e86782f, type: 2}
+  requiredItems: []

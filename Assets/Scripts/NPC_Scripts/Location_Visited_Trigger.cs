@@ -11,7 +11,7 @@ public class Location_Visited_Trigger : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            Location_History_Tracker.instance.RecordLocation(locationVisited);
+            Game_Manager.instance.locationHistoryTracker.RecordLocation(locationVisited);
             if (destroyOnTouch)
             {
                 Destroy(gameObject);

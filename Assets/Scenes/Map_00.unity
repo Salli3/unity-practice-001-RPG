@@ -1424,11 +1424,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactAnim: {fileID: 218144175}
   conversations:
-  - {fileID: 11400000, guid: ed3f480b4541ab547bcc658ca0e667e4, type: 2}
   - {fileID: 11400000, guid: 1c9cf68fecd758345a4ae9d4bc857be6, type: 2}
-  - {fileID: 11400000, guid: 3b06c8e54733a2d4d8e270773e909c8d, type: 2}
-  - {fileID: 11400000, guid: 41330e88a075d3c468fca81c84cd5846, type: 2}
+  - {fileID: 11400000, guid: ed3f480b4541ab547bcc658ca0e667e4, type: 2}
   - {fileID: 11400000, guid: c1097c267538b974a9c0dc128daa19f4, type: 2}
+  - {fileID: 11400000, guid: 41330e88a075d3c468fca81c84cd5846, type: 2}
+  - {fileID: 11400000, guid: 3b06c8e54733a2d4d8e270773e909c8d, type: 2}
   currentConversation: {fileID: 0}
 --- !u!114 &329436014
 MonoBehaviour:
@@ -2893,6 +2893,39 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4600412942059829815, guid: 1a09dea9df3485d45b14df38836ee64d, type: 3}
   m_PrefabInstance: {fileID: 7632892408141342463}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &633465116 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3044214891743727061, guid: 1a09dea9df3485d45b14df38836ee64d, type: 3}
+  m_PrefabInstance: {fileID: 7632892408141342463}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 633465114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29ece565b6d07264696d338a2c16b449, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &633465117 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3268907679294962113, guid: 1a09dea9df3485d45b14df38836ee64d, type: 3}
+  m_PrefabInstance: {fileID: 7632892408141342463}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 633465114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f1e5f543bd317547929e0a33144769e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &633465118 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6858642029714069578, guid: 1a09dea9df3485d45b14df38836ee64d, type: 3}
+  m_PrefabInstance: {fileID: 7632892408141342463}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 633465114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7186f7faef2ad154ba0536c8e0c014c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &658664861
 GameObject:
   m_ObjectHideFlags: 0
@@ -4352,8 +4385,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactAnim: {fileID: 53467759}
   conversations:
-  - {fileID: 11400000, guid: f15b25c316d86a4448b6f14a3f7de958, type: 2}
   - {fileID: 11400000, guid: 4d9c11d93429f084ea030d5e02eb912b, type: 2}
+  - {fileID: 11400000, guid: f15b25c316d86a4448b6f14a3f7de958, type: 2}
   currentConversation: {fileID: 0}
 --- !u!58 &1006092887
 CircleCollider2D:
@@ -13861,6 +13894,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Game_Manager
       objectReference: {fileID: 0}
+    - target: {fileID: 2120351674534031047, guid: e3d525dbd2d5bde49a6526188e954d47, type: 3}
+      propertyPath: dialogManager
+      value: 
+      objectReference: {fileID: 633465118}
+    - target: {fileID: 2120351674534031047, guid: e3d525dbd2d5bde49a6526188e954d47, type: 3}
+      propertyPath: dialogHistoryTracker
+      value: 
+      objectReference: {fileID: 633465117}
+    - target: {fileID: 2120351674534031047, guid: e3d525dbd2d5bde49a6526188e954d47, type: 3}
+      propertyPath: locationHistoryTracker
+      value: 
+      objectReference: {fileID: 633465116}
     - target: {fileID: 2120351674534031047, guid: e3d525dbd2d5bde49a6526188e954d47, type: 3}
       propertyPath: persistentObjects.Array.size
       value: 4

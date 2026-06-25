@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "DialogSO")]
@@ -11,6 +12,10 @@ public class Dialog_SO : ScriptableObject
     public Location_SO[] requiredLocations;
     public Item_SO[] requiredItems;
 
+    [Header("Control Flags")]
+    public bool removeAfterPlay;
+    public List<Dialog_SO> removeTheseOnPlay;
+
     public bool IsConditionMet()
     {
         //Debug.Log(requiredLocations == null ? "required location is null" : "required location is not null");
@@ -19,7 +24,7 @@ public class Dialog_SO : ScriptableObject
             foreach (var npc in requiredNPCs)
             {
                 //check if history tracker have this npc
-                if (Dialog_History_Tracker.instance.HasSpokenWith(npc) == false)
+                if (Game_Manager.instance.dialogHistoryTracker.HasSpokenWith(npc) == false)
                 {
                     return false;
                 }
@@ -33,7 +38,7 @@ public class Dialog_SO : ScriptableObject
             foreach (var location in requiredLocations)
             {
                 //check if history tracker have this location
-                if (Location_History_Tracker.instance.HasVisited(location) == false)
+                if (Game_Manager.instance.locationHistoryTracker.HasVisited(location) == false)
                 {
                     //Debug.Log("Have not been to: " +  location.locationName);
                     return false;
