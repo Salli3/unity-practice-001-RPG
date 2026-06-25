@@ -26,7 +26,7 @@ public class NPC_Talk : MonoBehaviour
     private void OnDisable()
     {
         interactAnim.Play("Close");
-        Dialog_Manager.instance.EndDialog();
+        Game_Manager.instance.dialogManager.EndDialog();
     }
 
     private void Update()
@@ -43,23 +43,41 @@ public class NPC_Talk : MonoBehaviour
             //{
             //    Dialog_Manager.instance.StartDialog(dialogSO);
             //}
-            if (Dialog_Manager.instance.isDialogActive == false)
+            if (Game_Manager.instance.dialogManager.isDialogActive == false)
             {
                 CheckForNewConversation();
-                Dialog_Manager.instance.StartDialog(currentConversation);
+                Game_Manager.instance.dialogManager.StartDialog(currentConversation);
             }
         }
     }
 
     private void CheckForNewConversation()
     {
-        for (int i = conversations.Count - 1; i >= 0 ; i--)
+        Debug.Log("Checking for new convo");
+        for (int i = 0; i < conversations.Count; i++)
         {
+            Debug.Log("Start for loop");
             var conversation = conversations[i];
+            Debug.Log("Check convo: " + conversation.name);
             if (conversation != null && conversation.IsConditionMet())
             {
-                conversations.RemoveAt(i);
                 currentConversation = conversation;
+
+                //remove if one time only
+                if (conversation.removeAfterPlay)
+                {
+                    conversations.RemoveAt(i);
+                }
+
+                if (conversation.removeTheseOnPlay != null && conversation.removeTheseOnPlay.Count > 0)
+                {
+                    foreach (var toRemove in conversation.removeTheseOnPlay)
+                    {
+                        conversations.Remove(toRemove);
+                    }    
+                }
+
+                break;
             }
         }
     }

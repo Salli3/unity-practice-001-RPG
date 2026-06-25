@@ -6,8 +6,6 @@ using UnityEngine.UI;
 
 public class Dialog_Manager : MonoBehaviour
 {
-    public static Dialog_Manager instance;
-
     [Header("UI References")]
     public CanvasGroup canvasGroup;
     public Image portrait;
@@ -22,15 +20,6 @@ public class Dialog_Manager : MonoBehaviour
 
     private void Awake()
     {
-        if (instance == null)
-        {
-            instance = this;
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
-
         canvasGroup.alpha = 0;
         canvasGroup.interactable = false;
         canvasGroup.blocksRaycasts = false;
@@ -55,7 +44,7 @@ public class Dialog_Manager : MonoBehaviour
         {
             Dialog_Line line = currentDialog.lines[currentDialogIndex];
 
-            Dialog_History_Tracker.instance.RecordNPC(line.speaker);
+            Game_Manager.instance.dialogHistoryTracker.RecordNPC(line.speaker);
 
             portrait.sprite = line.speaker.portrait;
             actorName.text = line.speaker.actorName;

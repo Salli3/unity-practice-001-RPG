@@ -5,6 +5,8 @@ using TMPro;
 
 public class Inventory_Manager : MonoBehaviour
 {
+    public static Inventory_Manager instance;
+
     public int gold;
     public TMP_Text goldText;
     //public Inventory_Slot[] itemSlots;
@@ -16,6 +18,18 @@ public class Inventory_Manager : MonoBehaviour
     public Transform slotContainer;
 
     public List<Inventory_Slot> itemSlots = new List<Inventory_Slot>();
+
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
 
     private void Start()
     {
@@ -141,5 +155,17 @@ public class Inventory_Manager : MonoBehaviour
             //}
             slot.UpdateUI();
         }
+    }
+
+    public bool HasItem(Item_SO itemSO)
+    {
+        foreach (var slot in itemSlots)
+        {
+            if(slot.itemSO == itemSO && slot.quantity > 0)
+            {
+                return true;
+            }
+        }
+        return false;
     }
 }

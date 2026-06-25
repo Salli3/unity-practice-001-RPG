@@ -10,10 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d3b99683820276d439f8e0f4976e5588, type: 3}
-  m_Name: Yellow_Monk_StillNeedBluePawn
+  m_Name: Yellow_Monk_Quest_FindBluePawn_Completed
   m_EditorClassIdentifier: 
   lines:
   - speaker: {fileID: 11400000, guid: 55954d1660b059e4aa567eb037dc5ce1, type: 2}
-    text: Get lost chum
+    text: WAZAAAAAAAAAAAAAAA!
   options: []
-  requiredNPCs: []
+  requiredNPCs:
+  - {fileID: 11400000, guid: 8a01a396ee73aed4f8279c32093b96f1, type: 2}
+  requiredLocations: []
+  requiredItems: []
+  removeAfterPlay: 1
+  removeTheseOnPlay:
+  - {fileID: 11400000, guid: ed3f480b4541ab547bcc658ca0e667e4, type: 2}
