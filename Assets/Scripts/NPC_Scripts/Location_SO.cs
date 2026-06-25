@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "LocationSO")]
+[CreateAssetMenu(fileName = "LocationSO")]
 public class Location_SO : ScriptableObject
 {
     public string locationID;
