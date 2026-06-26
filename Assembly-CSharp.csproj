@@ -76,6 +76,7 @@
     <Compile Include="Assets\Scripts\NPC_Scripts\Dialog_History_Tracker.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
+    <Compile Include="Assets\Scripts\Quest_Scripts\Quest_Objective_Slot.cs" />
     <Compile Include="Assets\Scripts\Inventory_And_Shop\Shop\Shop_Manager.cs" />
     <Compile Include="Assets\Scripts\Inventory_And_Shop\Shop\Shopkeeper.cs" />
     <Compile Include="Assets\Scripts\Skill_Scripts\Skills_Manager.cs" />
