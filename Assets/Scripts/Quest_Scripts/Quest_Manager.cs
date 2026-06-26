@@ -11,25 +11,26 @@ public class Quest_Manager : MonoBehaviour
         if (!questProgress.ContainsKey(questSO))
         {
             questProgress[questSO] = new Dictionary<Quest_Objective, int>();
-
-            var progressDictionary = questProgress[questSO];
-            int newAmount = 0;
-
-            if (objective.targetItem != null)
-            {
-                newAmount = Inventory_Manager.instance.GetItemQuantity(objective.targetItem);
-            }
-            else if (objective.targetLocation != null && Game_Manager.instance.locationHistoryTracker.HasVisited(objective.targetLocation))
-            {
-                newAmount = objective.requiredAmount;
-            }
-            else if (objective.targetNPC != null && Game_Manager.instance.dialogHistoryTracker.HasSpokenWith(objective.targetNPC))
-            {
-                newAmount = objective.requiredAmount;
-            }
-
-            progressDictionary[objective] = newAmount;
         }
+
+        var progressDictionary = questProgress[questSO];
+        int newAmount = 0;
+
+        if (objective.targetItem != null)
+        {
+            newAmount = Inventory_Manager.instance.GetItemQuantity(objective.targetItem);
+        }
+        else if (objective.targetLocation != null && Game_Manager.instance.locationHistoryTracker.HasVisited(objective.targetLocation))
+        {
+            newAmount = objective.requiredAmount;
+        }
+        else if (objective.targetNPC != null && Game_Manager.instance.dialogHistoryTracker.HasSpokenWith(objective.targetNPC))
+        {
+            newAmount = objective.requiredAmount;
+        }
+
+        progressDictionary[objective] = newAmount;
+
     }
 
     public string GetProgressText(Quest_SO questSO, Quest_Objective objective)
@@ -52,7 +53,7 @@ public class Quest_Manager : MonoBehaviour
 
     public int GetCurrentAmount(Quest_SO questSO, Quest_Objective objective)
     {
-        if(questProgress.TryGetValue(questSO, out var objectiveDictionary))
+        if (questProgress.TryGetValue(questSO, out var objectiveDictionary))
         {
             if (objectiveDictionary.TryGetValue(objective, out int amount))
             {

@@ -179,6 +179,7 @@ public class Inventory_Manager : MonoBehaviour
                 total += slot.quantity;
             }
         }
+        Debug.Log($"Have {total} item");
         return total;
     }
 }

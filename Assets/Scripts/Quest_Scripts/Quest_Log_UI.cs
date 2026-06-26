@@ -15,6 +15,46 @@ public class Quest_Log_UI : MonoBehaviour
 
     private Quest_SO questSO;
 
+    [SerializeField] private CanvasGroup questCanvas;
+
+    [SerializeField] private CanvasGroup acceptCanvas;
+    [SerializeField] private CanvasGroup declineCanvas;
+    [SerializeField] private CanvasGroup completeCanvas;
+
+    private void Awake()
+    {
+        questCanvas.alpha = 0;
+        questCanvas.blocksRaycasts = false;
+        questCanvas.interactable = false;
+    }
+
+    private void OnEnable()
+    {
+        Quest_Event.OnQuestOfferRequested += ShowQuestOffer;
+    }
+
+    private void OnDisable()
+    {
+        Quest_Event.OnQuestOfferRequested -= ShowQuestOffer;
+    }
+
+    public void ShowQuestOffer(Quest_SO incomingQuestSO)
+    {
+        HandleQuestClicked(incomingQuestSO);
+        SetCanvasState(questCanvas, true);
+
+        SetCanvasState(acceptCanvas, true);
+        SetCanvasState(declineCanvas, true);
+        SetCanvasState(completeCanvas, false);
+    }
+
+    private void SetCanvasState(CanvasGroup canvasGroup, bool activate)
+    {
+        canvasGroup.alpha = activate ? 1 : 0;
+        canvasGroup.blocksRaycasts = activate;
+        canvasGroup.interactable = activate;
+    }
+
     public void HandleQuestClicked(Quest_SO questSO)
     {
         this.questSO = questSO;

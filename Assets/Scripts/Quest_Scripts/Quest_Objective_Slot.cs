@@ -11,6 +11,7 @@ public class Quest_Objective_Slot : MonoBehaviour
         this.objectiveText.text = objectiveText;
         this.progressText.text = progressText;
 
+
         Color color = isComplete ? Color.gray : Color.white;
         this.objectiveText.color = color;
         this.progressText.color = color;
