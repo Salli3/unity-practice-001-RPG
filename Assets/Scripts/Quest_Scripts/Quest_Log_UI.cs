@@ -11,6 +11,7 @@ public class Quest_Log_UI : MonoBehaviour
     [SerializeField] private TMP_Text questDescriptionText;
 
     [SerializeField] private Quest_Objective_Slot[] objectiveSlots;
+    [SerializeField] private Quest_Reward_Slot[] rewardSlots;
 
     private Quest_SO questSO;
 
@@ -22,11 +23,7 @@ public class Quest_Log_UI : MonoBehaviour
         questDescriptionText.text = questSO.questDescription;
 
         DisplayObjectives();
-
-        foreach (var objective in questSO.objectives)
-        {
-            Debug.Log($"Objective: {objective.description}\n Current progress: {questManager.GetProgressText(questSO, objective)}");
-        }
+        DisplayReward();
     }
 
     private void DisplayObjectives()
@@ -48,6 +45,23 @@ public class Quest_Log_UI : MonoBehaviour
             else
             {
                 objectiveSlots[i].gameObject.SetActive(false);
+            }
+        }
+    }
+
+    private void DisplayReward()
+    {
+        for (int i = 0; i < rewardSlots.Length; i++)
+        {
+            if (i < questSO.rewards.Count)
+            {
+                var reward = questSO.rewards[i];
+                rewardSlots[i].gameObject.SetActive(true);
+                rewardSlots[i].DisplayReward(reward.item_SO.icon, reward.quantity);
+            }
+            else
+            {
+                rewardSlots[i].gameObject.SetActive(false);
             }
         }
     }

@@ -68,8 +68,8 @@
     <Compile Include="Assets\Scripts\Inventory_And_Shop\Inventory\Use_Item.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMPro_InstructionOverlay.cs" />
-    <Compile Include="Assets\Scripts\Inventory_And_Shop\Shop\Shop_Slot.cs" />
     <Compile Include="Assets\Scripts\Quest_Scripts\Quest_SO.cs" />
+    <Compile Include="Assets\Scripts\Inventory_And_Shop\Shop\Shop_Slot.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
     <Compile Include="Assets\Scripts\NPC_Scripts\Location_SO.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
@@ -102,6 +102,7 @@
     <Compile Include="Assets\Scripts\Game_Manager.cs" />
     <Compile Include="Assets\Scripts\Inventory_And_Shop\Inventory\Inventory_Manager.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextConsoleSimulator.cs" />
+    <Compile Include="Assets\Scripts\Quest_Scripts\Quest_Reward_Slot.cs" />
     <Compile Include="Assets\Scripts\Enemy_Scripts\Enemy_Knockback.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs" />
     <Compile Include="Assets\Scripts\Inventory_And_Shop\Inventory\Loot.cs" />

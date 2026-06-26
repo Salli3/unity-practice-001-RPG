@@ -20,4 +20,10 @@ MonoBehaviour:
   - description: Collect 1 wood
     target: {fileID: 11400000, guid: 9dae1c343a89f494fb538c2a9e86782f, type: 2}
     requiredAmount: 1
-    currentAmount: 0
+  rewards:
+  - item_SO: {fileID: 11400000, guid: f0dee190f94dc46408df10fbbb82d2fc, type: 2}
+    quantity: 10
+  - item_SO: {fileID: 11400000, guid: 152328e1e5e7cf54c87538c99f7ab38e, type: 2}
+    quantity: 10
+  - item_SO: {fileID: 11400000, guid: 24cb9dee81218db4aa70e655e596e1f0, type: 2}
+    quantity: 10

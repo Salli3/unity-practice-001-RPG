@@ -10,6 +10,7 @@ public class Quest_SO : ScriptableObject
     public float questProgress;
 
     public List<Quest_Objective> objectives;
+    public List<Quest_Reward> rewards;
 }
 
 [System.Serializable]
@@ -26,4 +27,11 @@ public class Quest_Objective
 
     public int requiredAmount;
     //public int currentAmount;
+}
+
+[System.Serializable]
+public class Quest_Reward
+{
+    public Item_SO item_SO;
+    public int quantity;
 }
