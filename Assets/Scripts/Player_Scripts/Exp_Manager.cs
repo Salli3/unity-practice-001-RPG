@@ -16,6 +16,7 @@ public class Exp_Manager : MonoBehaviour
     public TMP_Text currentLevelText;
 
     public static event Action<int> OnLevelUp;
+    //TODO create an event for all exp gain event to be used by any script
 
     private void Start()
     {
@@ -33,11 +34,13 @@ public class Exp_Manager : MonoBehaviour
     private void OnEnable()
     {
         Enemy_HP.OnEnemyDefeated += GainExp;
+        Inventory_Manager.OnExpGained += GainExp;
     }
 
     private void OnDisable()
     {
         Enemy_HP.OnEnemyDefeated -= GainExp;
+        Inventory_Manager.OnExpGained -= GainExp;
     }
 
     public void GainExp(float amount)

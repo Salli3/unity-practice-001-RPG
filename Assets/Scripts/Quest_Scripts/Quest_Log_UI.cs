@@ -46,7 +46,7 @@ public class Quest_Log_UI : MonoBehaviour
     #region Show quest methods
     public void ShowQuestOffer(Quest_SO incomingQuestSO)
     {
-        if (questManager.IsQuestAccepted(incomingQuestSO))
+        if (questManager.IsQuestAccepted(incomingQuestSO) || questManager.GetCompletedQuest(incomingQuestSO))
         {
             questSO = noAvailableQuestSO;
 
@@ -78,7 +78,7 @@ public class Quest_Log_UI : MonoBehaviour
     }
     #endregion
 
-    #region On button clicked methods
+    #region Button clicked methods
     public void OnAcceptQuestClicked()
     {
         questManager.AcceptQuest(questSO);
@@ -98,6 +98,8 @@ public class Quest_Log_UI : MonoBehaviour
         questManager.CompleteQuest(questSO);
 
         RefreshQuestList();
+        HandleQuestClicked(noAvailableQuestSO);
+        SetCanvasState(completeCanvas, false);
     }
     #endregion
 

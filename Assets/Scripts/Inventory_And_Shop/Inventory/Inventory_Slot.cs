@@ -64,6 +64,7 @@ public class Inventory_Slot : MonoBehaviour, IPointerClickHandler
             }
             else if (eventData.button == PointerEventData.InputButton.Right)
             {
+                Debug.Log($"Dropping item: {this}");
                 inventoryManager.DropItem(this);
             }
         }

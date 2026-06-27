@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using System;
 
 public class Inventory_Manager : MonoBehaviour
 {
@@ -18,6 +19,7 @@ public class Inventory_Manager : MonoBehaviour
     public Transform slotContainer;
 
     public List<Inventory_Slot> itemSlots = new List<Inventory_Slot>();
+    public static event Action<float> OnExpGained;
 
     private void Awake()
     {
@@ -62,6 +64,13 @@ public class Inventory_Manager : MonoBehaviour
         {
             gold += quantity;
             goldText.text = gold.ToString("D2");
+            return;
+        }
+
+        if (itemSO.isExp)
+        {
+            float convertedExp = quantity;
+            OnExpGained?.Invoke(convertedExp);
             return;
         }
 

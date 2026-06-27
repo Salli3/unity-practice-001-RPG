@@ -5,6 +5,7 @@ using UnityEngine;
 public class Quest_Manager : MonoBehaviour
 {
     private Dictionary<Quest_SO, Dictionary<Quest_Objective, int>> questProgress = new();
+    private List<Quest_SO> completedQuests = new();
 
     private void OnEnable()
     {
@@ -65,7 +66,16 @@ public class Quest_Manager : MonoBehaviour
     public void CompleteQuest(Quest_SO questSO)
     {
         questProgress.Remove(questSO);
-        //TODO granting reward
+        completedQuests.Add(questSO);
+        foreach (var reward in questSO.rewards)
+        {
+            Inventory_Manager.instance.AddItem(reward.item_SO, reward.quantity);
+        }
+    }
+
+    public bool GetCompletedQuest(Quest_SO questSO)
+    {
+        return completedQuests.Contains(questSO);
     }
     #endregion
 
