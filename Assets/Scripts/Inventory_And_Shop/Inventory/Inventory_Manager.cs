@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using System;
 
 public class Inventory_Manager : MonoBehaviour
 {
@@ -18,6 +19,7 @@ public class Inventory_Manager : MonoBehaviour
     public Transform slotContainer;
 
     public List<Inventory_Slot> itemSlots = new List<Inventory_Slot>();
+    public static event Action<float> OnExpGained;
 
     private void Awake()
     {
@@ -65,10 +67,17 @@ public class Inventory_Manager : MonoBehaviour
             return;
         }
 
+        if (itemSO.isExp)
+        {
+            float convertedExp = quantity;
+            OnExpGained?.Invoke(convertedExp);
+            return;
+        }
+
         foreach (var slot in itemSlots)
         {
             //check if there is another same item in inventory
-            if(slot.itemSO == itemSO) //&& itemSO.stackSize -> scrap this idea
+            if (slot.itemSO == itemSO) //&& itemSO.stackSize -> scrap this idea
             {
                 //int availableSpace = itemSO.stackSize - slot.quantity;
                 //int amountToAdd = Mathf.Min(availableSpace, quantity);
@@ -161,11 +170,25 @@ public class Inventory_Manager : MonoBehaviour
     {
         foreach (var slot in itemSlots)
         {
-            if(slot.itemSO == itemSO && slot.quantity > 0)
+            if (slot.itemSO == itemSO && slot.quantity > 0)
             {
                 return true;
             }
         }
         return false;
+    }
+
+    public int GetItemQuantity(Item_SO itemSO)
+    {
+        int total = 0;
+        foreach (var slot in itemSlots)
+        {
+            if (slot.itemSO == itemSO)
+            {
+                total += slot.quantity;
+            }
+        }
+        Debug.Log($"Have {total} item");
+        return total;
     }
 }

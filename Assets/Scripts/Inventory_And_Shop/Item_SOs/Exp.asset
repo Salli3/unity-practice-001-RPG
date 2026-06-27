@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 192dcccc0bb912946ae9281a0c69f62c, type: 3}
-  m_Name: Gold
+  m_Name: Exp
   m_EditorClassIdentifier: 
-  itemName: Gold
-  itemDescription: Shiny
-  icon: {fileID: 21300000, guid: a6e6aa18e747bcc47bd4e662581f50ca, type: 3}
-  isGold: 1
-  isExp: 0
+  itemName: Exp
+  itemDescription: My XP bar is low
+  icon: {fileID: 21300000, guid: c389360875aa6cd478799ad9080c4da7, type: 3}
+  isGold: 0
+  isExp: 1
   attackRange: 0
   damage: 0
   knockbackForce: 0
