@@ -13,6 +13,8 @@ public class Quest_Log_UI : MonoBehaviour
     [SerializeField] private Quest_Objective_Slot[] objectiveSlots;
     [SerializeField] private Quest_Reward_Slot[] rewardSlots;
 
+    [SerializeField] private Quest_Log_Slot[] questSlots;
+
     private Quest_SO questSO;
 
     [SerializeField] private CanvasGroup questCanvas;
@@ -46,6 +48,41 @@ public class Quest_Log_UI : MonoBehaviour
         SetCanvasState(acceptCanvas, true);
         SetCanvasState(declineCanvas, true);
         SetCanvasState(completeCanvas, false);
+    }
+
+    public void OnAcceptQuestClicked()
+    {
+        questManager.AcceptQuest(questSO);
+        SetCanvasState(completeCanvas, false);
+        SetCanvasState(acceptCanvas, false);
+        RefreshQuestList();
+    }
+
+    public void OnDeclineQuestClicked()
+    {
+        SetCanvasState(questCanvas, false);
+    }
+
+    public void OnCompleteQuestClicked()
+    {
+        RefreshQuestList();
+    }
+
+    public void RefreshQuestList()
+    {
+        List<Quest_SO> activeQuests = questManager.GetActiveQuests();
+
+        for (int i = 0; i < questSlots.Length; i++)
+        {
+            if (i < activeQuests.Count)
+            {
+                questSlots[i].SetQuest(activeQuests[i]);
+            }
+            else
+            {
+                questSlots[i].ClearSlot();
+            }
+        }
     }
 
     private void SetCanvasState(CanvasGroup canvasGroup, bool activate)

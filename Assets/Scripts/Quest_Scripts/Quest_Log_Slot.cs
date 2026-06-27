@@ -43,6 +43,12 @@ public class Quest_Log_Slot : MonoBehaviour
         gameObject.SetActive(true);
     }
 
+    public void ClearSlot()
+    {
+        currentQuest = null;
+        gameObject.SetActive(false);
+    }
+
     public void OnSlotClicked()
     {
         Debug.Log("Quest button clicked");
