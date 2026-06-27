@@ -6,4 +6,7 @@ using UnityEngine;
 public static class Quest_Event
 {
     public static Action<Quest_SO> OnQuestOfferRequested;
+    public static Action<Quest_SO> OnQuestTurnInRequested;
+
+    public static Func<Quest_SO, bool> IsQuestCompleted;
 }

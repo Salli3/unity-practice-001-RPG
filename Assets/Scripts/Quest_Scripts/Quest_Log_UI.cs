@@ -14,6 +14,7 @@ public class Quest_Log_UI : MonoBehaviour
     [SerializeField] private Quest_Reward_Slot[] rewardSlots;
 
     [SerializeField] private Quest_Log_Slot[] questSlots;
+    [SerializeField] private Quest_SO noAvailableQuestSO;
 
     private Quest_SO questSO;
 
@@ -33,29 +34,58 @@ public class Quest_Log_UI : MonoBehaviour
     private void OnEnable()
     {
         Quest_Event.OnQuestOfferRequested += ShowQuestOffer;
+        Quest_Event.OnQuestTurnInRequested += ShowQuestTurnIn;
     }
 
     private void OnDisable()
     {
         Quest_Event.OnQuestOfferRequested -= ShowQuestOffer;
+        Quest_Event.OnQuestTurnInRequested -= ShowQuestTurnIn;
     }
 
+    #region Show quest methods
     public void ShowQuestOffer(Quest_SO incomingQuestSO)
     {
-        HandleQuestClicked(incomingQuestSO);
-        SetCanvasState(questCanvas, true);
+        if (questManager.IsQuestAccepted(incomingQuestSO))
+        {
+            questSO = noAvailableQuestSO;
 
-        SetCanvasState(acceptCanvas, true);
-        SetCanvasState(declineCanvas, true);
-        SetCanvasState(completeCanvas, false);
+            SetCanvasState(acceptCanvas, false);
+            SetCanvasState(declineCanvas, true);
+            SetCanvasState(completeCanvas, false);
+        }
+        else
+        {
+            questSO = incomingQuestSO;
+            SetCanvasState(acceptCanvas, true);
+            SetCanvasState(declineCanvas, true);
+            SetCanvasState(completeCanvas, false);
+        }
+        HandleQuestClicked(questSO);
+        SetCanvasState(questCanvas, true);
     }
 
+    public void ShowQuestTurnIn(Quest_SO incomingQuestSO)
+    {
+        Debug.Log($"Show quest turning in: {incomingQuestSO}");
+        questSO = incomingQuestSO;
+        HandleQuestClicked(questSO);
+
+        SetCanvasState(questCanvas, true);
+        SetCanvasState(acceptCanvas, false);
+        SetCanvasState(declineCanvas, false);
+        SetCanvasState(completeCanvas, true);
+    }
+    #endregion
+
+    #region On button clicked methods
     public void OnAcceptQuestClicked()
     {
         questManager.AcceptQuest(questSO);
         SetCanvasState(completeCanvas, false);
         SetCanvasState(acceptCanvas, false);
         RefreshQuestList();
+        HandleQuestClicked(noAvailableQuestSO);
     }
 
     public void OnDeclineQuestClicked()
@@ -65,8 +95,11 @@ public class Quest_Log_UI : MonoBehaviour
 
     public void OnCompleteQuestClicked()
     {
+        questManager.CompleteQuest(questSO);
+
         RefreshQuestList();
     }
+    #endregion
 
     public void RefreshQuestList()
     {
@@ -92,6 +125,8 @@ public class Quest_Log_UI : MonoBehaviour
         canvasGroup.interactable = activate;
     }
 
+    #region Quest info panel methods
+    //display quest info on info panel
     public void HandleQuestClicked(Quest_SO questSO)
     {
         this.questSO = questSO;
@@ -103,6 +138,7 @@ public class Quest_Log_UI : MonoBehaviour
         DisplayReward();
     }
 
+    //display objectives on info panel
     private void DisplayObjectives()
     {
         for (int i = 0; i < objectiveSlots.Length; i++)
@@ -142,4 +178,5 @@ public class Quest_Log_UI : MonoBehaviour
             }
         }
     }
+    #endregion
 }

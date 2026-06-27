@@ -3,7 +3,15 @@
   "WorkspaceRootPath": "D:\\Sallie\\Study\\Unity\\RPG_001\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5A4EBC5E-3886-FFFA-88B3-2399E4FE47A6}|Assembly-CSharp.csproj|D:\\Sallie\\Study\\Unity\\RPG_001\\assets\\scripts\\quest_scripts\\quest_log_ui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5A4EBC5E-3886-FFFA-88B3-2399E4FE47A6}|Assembly-CSharp.csproj|D:\\Sallie\\Study\\Unity\\RPG_001\\assets\\scripts\\quest_scripts\\quest_board.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A4EBC5E-3886-FFFA-88B3-2399E4FE47A6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\quest_scripts\\quest_board.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A4EBC5E-3886-FFFA-88B3-2399E4FE47A6}|Assembly-CSharp.csproj|D:\\Sallie\\Study\\Unity\\RPG_001\\assets\\scripts\\quest_scripts\\quest_reward_slot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A4EBC5E-3886-FFFA-88B3-2399E4FE47A6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\quest_scripts\\quest_reward_slot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A4EBC5E-3886-FFFA-88B3-2399E4FE47A6}|Assembly-CSharp.csproj|d:\\sallie\\study\\unity\\rpg_001\\assets\\scripts\\quest_scripts\\quest_log_ui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5A4EBC5E-3886-FFFA-88B3-2399E4FE47A6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\quest_scripts\\quest_log_ui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -11,12 +19,24 @@
       "RelativeMoniker": "D:0:0:{5A4EBC5E-3886-FFFA-88B3-2399E4FE47A6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\quest_scripts\\quest_manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5A4EBC5E-3886-FFFA-88B3-2399E4FE47A6}|Assembly-CSharp.csproj|D:\\Sallie\\Study\\Unity\\RPG_001\\assets\\scripts\\quest_scripts\\quest_log_slot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5A4EBC5E-3886-FFFA-88B3-2399E4FE47A6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\quest_scripts\\quest_log_slot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5A4EBC5E-3886-FFFA-88B3-2399E4FE47A6}|Assembly-CSharp.csproj|D:\\Sallie\\Study\\Unity\\RPG_001\\assets\\scripts\\quest_scripts\\quest_event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A4EBC5E-3886-FFFA-88B3-2399E4FE47A6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\quest_scripts\\quest_event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5A4EBC5E-3886-FFFA-88B3-2399E4FE47A6}|Assembly-CSharp.csproj|D:\\Sallie\\Study\\Unity\\RPG_001\\assets\\scripts\\quest_scripts\\quest_objective_slot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5A4EBC5E-3886-FFFA-88B3-2399E4FE47A6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\quest_scripts\\quest_objective_slot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A4EBC5E-3886-FFFA-88B3-2399E4FE47A6}|Assembly-CSharp.csproj|D:\\Sallie\\Study\\Unity\\RPG_001\\assets\\scripts\\scene_scripts\\scene_changer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A4EBC5E-3886-FFFA-88B3-2399E4FE47A6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\scene_scripts\\scene_changer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A4EBC5E-3886-FFFA-88B3-2399E4FE47A6}|Assembly-CSharp.csproj|D:\\Sallie\\Study\\Unity\\RPG_001\\assets\\scripts\\enemy_scripts\\enemy_combat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A4EBC5E-3886-FFFA-88B3-2399E4FE47A6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy_scripts\\enemy_combat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A4EBC5E-3886-FFFA-88B3-2399E4FE47A6}|Assembly-CSharp.csproj|D:\\Sallie\\Study\\Unity\\RPG_001\\assets\\scripts\\quest_scripts\\quest_log_slot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A4EBC5E-3886-FFFA-88B3-2399E4FE47A6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\quest_scripts\\quest_log_slot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5A4EBC5E-3886-FFFA-88B3-2399E4FE47A6}|Assembly-CSharp.csproj|D:\\Sallie\\Study\\Unity\\RPG_001\\assets\\scripts\\npc_scripts\\dialog_manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -53,18 +73,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{5A4EBC5E-3886-FFFA-88B3-2399E4FE47A6}|Assembly-CSharp.csproj|D:\\Sallie\\Study\\Unity\\RPG_001\\assets\\scripts\\quest_scripts\\quest_so.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5A4EBC5E-3886-FFFA-88B3-2399E4FE47A6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\quest_scripts\\quest_so.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5A4EBC5E-3886-FFFA-88B3-2399E4FE47A6}|Assembly-CSharp.csproj|d:\\sallie\\study\\unity\\rpg_001\\assets\\scripts\\quest_scripts\\quest_board.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5A4EBC5E-3886-FFFA-88B3-2399E4FE47A6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\quest_scripts\\quest_board.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5A4EBC5E-3886-FFFA-88B3-2399E4FE47A6}|Assembly-CSharp.csproj|D:\\Sallie\\Study\\Unity\\RPG_001\\assets\\scripts\\quest_scripts\\quest_reward_slot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5A4EBC5E-3886-FFFA-88B3-2399E4FE47A6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\quest_scripts\\quest_reward_slot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5A4EBC5E-3886-FFFA-88B3-2399E4FE47A6}|Assembly-CSharp.csproj|D:\\Sallie\\Study\\Unity\\RPG_001\\assets\\scripts\\quest_scripts\\quest_event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5A4EBC5E-3886-FFFA-88B3-2399E4FE47A6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\quest_scripts\\quest_event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5A4EBC5E-3886-FFFA-88B3-2399E4FE47A6}|Assembly-CSharp.csproj|D:\\Sallie\\Study\\Unity\\RPG_001\\assets\\scripts\\inventory_and_shop\\item_so.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -147,10 +155,6 @@
       "RelativeMoniker": "D:0:0:{5A4EBC5E-3886-FFFA-88B3-2399E4FE47A6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\game_manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5A4EBC5E-3886-FFFA-88B3-2399E4FE47A6}|Assembly-CSharp.csproj|D:\\Sallie\\Study\\Unity\\RPG_001\\assets\\scripts\\scene_scripts\\scene_changer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5A4EBC5E-3886-FFFA-88B3-2399E4FE47A6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\scene_scripts\\scene_changer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5A4EBC5E-3886-FFFA-88B3-2399E4FE47A6}|Assembly-CSharp.csproj|D:\\Sallie\\Study\\Unity\\RPG_001\\assets\\scripts\\npc_scripts\\npc_states\\npc_wander.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5A4EBC5E-3886-FFFA-88B3-2399E4FE47A6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\npc_scripts\\npc_states\\npc_wander.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -177,10 +181,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{5A4EBC5E-3886-FFFA-88B3-2399E4FE47A6}|Assembly-CSharp.csproj|D:\\Sallie\\Study\\Unity\\RPG_001\\assets\\scripts\\enemy_scripts\\enemy_knockback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5A4EBC5E-3886-FFFA-88B3-2399E4FE47A6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy_scripts\\enemy_knockback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5A4EBC5E-3886-FFFA-88B3-2399E4FE47A6}|Assembly-CSharp.csproj|D:\\Sallie\\Study\\Unity\\RPG_001\\assets\\scripts\\enemy_scripts\\enemy_combat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5A4EBC5E-3886-FFFA-88B3-2399E4FE47A6}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy_scripts\\enemy_combat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5A4EBC5E-3886-FFFA-88B3-2399E4FE47A6}|Assembly-CSharp.csproj|D:\\Sallie\\Study\\Unity\\RPG_001\\assets\\scripts\\player_scripts\\player_bow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -218,11 +218,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 46,
+          "SelectedChildIndex": 50,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 31,
               "Title": "Elevation_Entry.cs",
               "DocumentMoniker": "D:\\Sallie\\Study\\Unity\\RPG_001\\Assets\\Scripts\\Map_Scripts\\Elevation_Entry.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Map_Scripts\\Elevation_Entry.cs",
@@ -231,11 +231,12 @@
               "ViewState": "AgIAAAwAAAAAAAAAAAAiwB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-08T06:36:30.775Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 24,
               "Title": "Elevation_Exit.cs",
               "DocumentMoniker": "D:\\Sallie\\Study\\Unity\\RPG_001\\Assets\\Scripts\\Map_Scripts\\Elevation_Exit.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Map_Scripts\\Elevation_Exit.cs",
@@ -244,11 +245,12 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-15T16:48:56.008Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "Stats_Manager.cs",
               "DocumentMoniker": "D:\\Sallie\\Study\\Unity\\RPG_001\\Assets\\Scripts\\Player_Scripts\\Stats_Manager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player_Scripts\\Stats_Manager.cs",
@@ -257,11 +259,12 @@
               "ViewState": "AgIAAAgAAAAAAAAAAAAQwCoAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-27T06:50:35.647Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 23,
               "Title": "Stats_UI.cs",
               "DocumentMoniker": "D:\\Sallie\\Study\\Unity\\RPG_001\\Assets\\Scripts\\Player_Scripts\\Stats_UI.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player_Scripts\\Stats_UI.cs",
@@ -270,11 +273,12 @@
               "ViewState": "AgIAABgAAAAAAAAAAAA5wDsAAAB+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-05T19:24:47.841Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "Skill_Tree_Manager.cs",
               "DocumentMoniker": "D:\\Sallie\\Study\\Unity\\RPG_001\\Assets\\Scripts\\Skill_Scripts\\Skill_Tree_Manager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Skill_Scripts\\Skill_Tree_Manager.cs",
@@ -283,11 +287,12 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-12T10:10:37.919Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "Skills_Manager.cs",
               "DocumentMoniker": "D:\\Sallie\\Study\\Unity\\RPG_001\\Assets\\Scripts\\Skill_Scripts\\Skills_Manager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Skill_Scripts\\Skills_Manager.cs",
@@ -296,11 +301,12 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAABTAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-12T10:38:50.95Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "Skill_Slot.cs",
               "DocumentMoniker": "D:\\Sallie\\Study\\Unity\\RPG_001\\Assets\\Scripts\\Skill_Scripts\\Skill_Slot.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Skill_Scripts\\Skill_Slot.cs",
@@ -309,11 +315,12 @@
               "ViewState": "AgIAACcAAAAAAAAAAAAowE8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-08T19:01:02.039Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 27,
               "Title": "Skill_SO.cs",
               "DocumentMoniker": "D:\\Sallie\\Study\\Unity\\RPG_001\\Assets\\Scripts\\Skill_Scripts\\Skill_SO.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Skill_Scripts\\Skill_SO.cs",
@@ -322,11 +329,12 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-08T18:52:26.711Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 26,
               "Title": "Skills_UI.cs",
               "DocumentMoniker": "D:\\Sallie\\Study\\Unity\\RPG_001\\Assets\\Scripts\\Skill_Scripts\\Skills_UI.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Skill_Scripts\\Skills_UI.cs",
@@ -335,7 +343,8 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-12T10:39:33.985Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -348,11 +357,12 @@
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-05T20:42:31.841Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 44,
               "Title": "Enemy_Knockback.cs",
               "DocumentMoniker": "D:\\Sallie\\Study\\Unity\\RPG_001\\Assets\\Scripts\\Enemy_Scripts\\Enemy_Knockback.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy_Scripts\\Enemy_Knockback.cs",
@@ -361,11 +371,12 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-18T23:06:24.646Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 41,
               "Title": "Enemy_Movement.cs",
               "DocumentMoniker": "D:\\Sallie\\Study\\Unity\\RPG_001\\Assets\\Scripts\\Enemy_Scripts\\Enemy_Movement.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy_Scripts\\Enemy_Movement.cs",
@@ -374,7 +385,8 @@
               "ViewState": "AgIAAAkAAAAAAAAAAAAswFEAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-16T13:59:48.454Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -387,11 +399,12 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-18T22:23:43.743Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 7,
               "Title": "Enemy_Combat.cs",
               "DocumentMoniker": "D:\\Sallie\\Study\\Unity\\RPG_001\\Assets\\Scripts\\Enemy_Scripts\\Enemy_Combat.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy_Scripts\\Enemy_Combat.cs",
@@ -400,11 +413,12 @@
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-16T11:22:37.783Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 43,
               "Title": "Player_Movement.cs",
               "DocumentMoniker": "D:\\Sallie\\Study\\Unity\\RPG_001\\Assets\\Scripts\\Player_Scripts\\Player_Movement.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player_Scripts\\Player_Movement.cs",
@@ -413,7 +427,8 @@
               "ViewState": "AgIAAAoAAAAAAAAAAAAYwCIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-12T15:52:34.151Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -426,11 +441,12 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-16T11:17:28.407Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 40,
               "Title": "Player_Combat.cs",
               "DocumentMoniker": "D:\\Sallie\\Study\\Unity\\RPG_001\\Assets\\Scripts\\Player_Scripts\\Player_Combat.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player_Scripts\\Player_Combat.cs",
@@ -439,7 +455,8 @@
               "ViewState": "AgIAABwAAAAAAAAAAIA3wCYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-18T16:05:02.779Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -452,7 +469,8 @@
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-06T08:41:17.117Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -465,7 +483,8 @@
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-06T08:33:08.755Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -478,11 +497,12 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-08T17:22:35.109Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "Item_SO.cs",
               "DocumentMoniker": "D:\\Sallie\\Study\\Unity\\RPG_001\\Assets\\Scripts\\Inventory_And_Shop\\Item_SO.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Inventory_And_Shop\\Item_SO.cs",
@@ -496,7 +516,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 42,
               "Title": "Use_Item.cs",
               "DocumentMoniker": "D:\\Sallie\\Study\\Unity\\RPG_001\\Assets\\Scripts\\Inventory_And_Shop\\Inventory\\Use_Item.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Inventory_And_Shop\\Inventory\\Use_Item.cs",
@@ -505,7 +525,8 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-14T04:41:50.569Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -518,11 +539,12 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-14T04:41:48.792Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 25,
               "Title": "Inventory_Manager.cs",
               "DocumentMoniker": "D:\\Sallie\\Study\\Unity\\RPG_001\\Assets\\Scripts\\Inventory_And_Shop\\Inventory\\Inventory_Manager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Inventory_And_Shop\\Inventory\\Inventory_Manager.cs",
@@ -531,11 +553,12 @@
               "ViewState": "AgIAAGUAAAAAAAAAAAAQwLgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-14T04:41:40.658Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 39,
               "Title": "Inventory_Slot.cs",
               "DocumentMoniker": "D:\\Sallie\\Study\\Unity\\RPG_001\\Assets\\Scripts\\Inventory_And_Shop\\Inventory\\Inventory_Slot.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Inventory_And_Shop\\Inventory\\Inventory_Slot.cs",
@@ -544,11 +567,12 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-14T04:41:44.876Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "Shop_Manager.cs",
               "DocumentMoniker": "D:\\Sallie\\Study\\Unity\\RPG_001\\Assets\\Scripts\\Inventory_And_Shop\\Shop\\Shop_Manager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Inventory_And_Shop\\Shop\\Shop_Manager.cs",
@@ -562,7 +586,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "Shop_Slot.cs",
               "DocumentMoniker": "D:\\Sallie\\Study\\Unity\\RPG_001\\Assets\\Scripts\\Inventory_And_Shop\\Shop\\Shop_Slot.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Inventory_And_Shop\\Shop\\Shop_Slot.cs",
@@ -576,7 +600,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 32,
               "Title": "Shop_Info.cs",
               "DocumentMoniker": "D:\\Sallie\\Study\\Unity\\RPG_001\\Assets\\Scripts\\Inventory_And_Shop\\Shop\\Shop_Info.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Inventory_And_Shop\\Shop\\Shop_Info.cs",
@@ -585,11 +609,12 @@
               "ViewState": "AgIAAD8AAAAAAAAAAAAowBAAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-14T08:40:41.972Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 28,
               "Title": "Shopkeeper.cs",
               "DocumentMoniker": "D:\\Sallie\\Study\\Unity\\RPG_001\\Assets\\Scripts\\Inventory_And_Shop\\Shop\\Shopkeeper.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Inventory_And_Shop\\Shop\\Shopkeeper.cs",
@@ -598,11 +623,12 @@
               "ViewState": "AgIAABEAAAAAAAAAAAAQwBwAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-15T15:08:48.852Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 33,
               "Title": "Shop_Button_Toggle.cs",
               "DocumentMoniker": "D:\\Sallie\\Study\\Unity\\RPG_001\\Assets\\Scripts\\Inventory_And_Shop\\Shop\\Shop_Button_Toggle.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Inventory_And_Shop\\Shop\\Shop_Button_Toggle.cs",
@@ -611,24 +637,26 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-15T16:11:05.332Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 6,
               "Title": "Scene_Changer.cs",
               "DocumentMoniker": "D:\\Sallie\\Study\\Unity\\RPG_001\\Assets\\Scripts\\Scene_Scripts\\Scene_Changer.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Scene_Scripts\\Scene_Changer.cs",
               "ToolTip": "D:\\Sallie\\Study\\Unity\\RPG_001\\Assets\\Scripts\\Scene_Scripts\\Scene_Changer.cs",
               "RelativeToolTip": "Assets\\Scripts\\Scene_Scripts\\Scene_Changer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-16T10:15:40.495Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 37,
               "Title": "Game_Manager.cs",
               "DocumentMoniker": "D:\\Sallie\\Study\\Unity\\RPG_001\\Assets\\Scripts\\Game_Manager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Game_Manager.cs",
@@ -637,11 +665,12 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-16T10:48:57.135Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 36,
               "Title": "Confiner_Finder.cs",
               "DocumentMoniker": "D:\\Sallie\\Study\\Unity\\RPG_001\\Assets\\Scripts\\Camera_Scripts\\Confiner_Finder.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Camera_Scripts\\Confiner_Finder.cs",
@@ -650,11 +679,12 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-16T13:47:35.178Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 35,
               "Title": "NPC_Patrol.cs",
               "DocumentMoniker": "D:\\Sallie\\Study\\Unity\\RPG_001\\Assets\\Scripts\\NPC_Scripts\\NPC_States\\NPC_Patrol.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\NPC_Scripts\\NPC_States\\NPC_Patrol.cs",
@@ -663,11 +693,12 @@
               "ViewState": "AgIAAAsAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-20T19:05:11.791Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 38,
               "Title": "NPC_Wander.cs",
               "DocumentMoniker": "D:\\Sallie\\Study\\Unity\\RPG_001\\Assets\\Scripts\\NPC_Scripts\\NPC_States\\NPC_Wander.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\NPC_Scripts\\NPC_States\\NPC_Wander.cs",
@@ -676,11 +707,12 @@
               "ViewState": "AgIAABkAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-20T19:05:15.212Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 15,
               "Title": "NPC_Talk.cs",
               "DocumentMoniker": "D:\\Sallie\\Study\\Unity\\RPG_001\\Assets\\Scripts\\NPC_Scripts\\NPC_States\\NPC_Talk.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\NPC_Scripts\\NPC_States\\NPC_Talk.cs",
@@ -694,7 +726,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 12,
               "Title": "NPC_Controller.cs",
               "DocumentMoniker": "D:\\Sallie\\Study\\Unity\\RPG_001\\Assets\\Scripts\\NPC_Scripts\\NPC_States\\NPC_Controller.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\NPC_Scripts\\NPC_States\\NPC_Controller.cs",
@@ -708,7 +740,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 13,
               "Title": "Actor_SO.cs",
               "DocumentMoniker": "D:\\Sallie\\Study\\Unity\\RPG_001\\Assets\\Scripts\\NPC_Scripts\\Actor_SO.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\NPC_Scripts\\Actor_SO.cs",
@@ -722,7 +754,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 29,
               "Title": "Dialog_SO.cs",
               "DocumentMoniker": "D:\\Sallie\\Study\\Unity\\RPG_001\\Assets\\Scripts\\NPC_Scripts\\Dialog_SO.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\NPC_Scripts\\Dialog_SO.cs",
@@ -731,11 +763,12 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-25T16:20:41.466Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "Dialog_Manager.cs",
               "DocumentMoniker": "D:\\Sallie\\Study\\Unity\\RPG_001\\Assets\\Scripts\\NPC_Scripts\\Dialog_Manager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\NPC_Scripts\\Dialog_Manager.cs",
@@ -749,7 +782,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 14,
               "Title": "Dialog_History_Tracker.cs",
               "DocumentMoniker": "D:\\Sallie\\Study\\Unity\\RPG_001\\Assets\\Scripts\\NPC_Scripts\\Dialog_History_Tracker.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\NPC_Scripts\\Dialog_History_Tracker.cs",
@@ -763,7 +796,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 34,
               "Title": "Location_SO.cs",
               "DocumentMoniker": "D:\\Sallie\\Study\\Unity\\RPG_001\\Assets\\Scripts\\NPC_Scripts\\Location_SO.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\NPC_Scripts\\Location_SO.cs",
@@ -772,11 +805,12 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-25T16:20:43.38Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 30,
               "Title": "Location_History_Tracker.cs",
               "DocumentMoniker": "D:\\Sallie\\Study\\Unity\\RPG_001\\Assets\\Scripts\\NPC_Scripts\\Location_History_Tracker.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\NPC_Scripts\\Location_History_Tracker.cs",
@@ -785,11 +819,12 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-22T22:09:58.497Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 16,
               "Title": "Location_Visited_Trigger.cs",
               "DocumentMoniker": "D:\\Sallie\\Study\\Unity\\RPG_001\\Assets\\Scripts\\NPC_Scripts\\Location_Visited_Trigger.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\NPC_Scripts\\Location_Visited_Trigger.cs",
@@ -803,7 +838,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 17,
               "Title": "Quest_SO.cs",
               "DocumentMoniker": "D:\\Sallie\\Study\\Unity\\RPG_001\\Assets\\Scripts\\Quest_Scripts\\Quest_SO.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Quest_Scripts\\Quest_SO.cs",
@@ -817,7 +852,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "Quest_Log_Slot.cs",
               "DocumentMoniker": "D:\\Sallie\\Study\\Unity\\RPG_001\\Assets\\Scripts\\Quest_Scripts\\Quest_Log_Slot.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Quest_Scripts\\Quest_Log_Slot.cs",
@@ -831,13 +866,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Quest_Log_UI.cs",
               "DocumentMoniker": "D:\\Sallie\\Study\\Unity\\RPG_001\\Assets\\Scripts\\Quest_Scripts\\Quest_Log_UI.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Quest_Scripts\\Quest_Log_UI.cs",
               "ToolTip": "D:\\Sallie\\Study\\Unity\\RPG_001\\Assets\\Scripts\\Quest_Scripts\\Quest_Log_UI.cs",
               "RelativeToolTip": "Assets\\Scripts\\Quest_Scripts\\Quest_Log_UI.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAxwFIAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAAwEMAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-25T16:59:07.614Z",
               "IsPinned": true,
@@ -845,13 +880,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Quest_Manager.cs",
               "DocumentMoniker": "D:\\Sallie\\Study\\Unity\\RPG_001\\Assets\\Scripts\\Quest_Scripts\\Quest_Manager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Quest_Scripts\\Quest_Manager.cs",
               "ToolTip": "D:\\Sallie\\Study\\Unity\\RPG_001\\Assets\\Scripts\\Quest_Scripts\\Quest_Manager.cs",
               "RelativeToolTip": "Assets\\Scripts\\Quest_Scripts\\Quest_Manager.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAgwAoAAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAFAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-25T19:10:02.45Z",
               "IsPinned": true,
@@ -859,7 +894,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Quest_Objective_Slot.cs",
               "DocumentMoniker": "D:\\Sallie\\Study\\Unity\\RPG_001\\Assets\\Scripts\\Quest_Scripts\\Quest_Objective_Slot.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Quest_Scripts\\Quest_Objective_Slot.cs",
@@ -873,7 +908,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 1,
               "Title": "Quest_Reward_Slot.cs",
               "DocumentMoniker": "D:\\Sallie\\Study\\Unity\\RPG_001\\Assets\\Scripts\\Quest_Scripts\\Quest_Reward_Slot.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Quest_Scripts\\Quest_Reward_Slot.cs",
@@ -887,13 +922,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 0,
               "Title": "Quest_Board.cs",
               "DocumentMoniker": "D:\\Sallie\\Study\\Unity\\RPG_001\\Assets\\Scripts\\Quest_Scripts\\Quest_Board.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Quest_Scripts\\Quest_Board.cs",
               "ToolTip": "D:\\Sallie\\Study\\Unity\\RPG_001\\Assets\\Scripts\\Quest_Scripts\\Quest_Board.cs",
               "RelativeToolTip": "Assets\\Scripts\\Quest_Scripts\\Quest_Board.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-26T01:21:05.092Z",
               "IsPinned": true,
@@ -901,13 +936,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 4,
               "Title": "Quest_Event.cs",
               "DocumentMoniker": "D:\\Sallie\\Study\\Unity\\RPG_001\\Assets\\Scripts\\Quest_Scripts\\Quest_Event.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Quest_Scripts\\Quest_Event.cs",
               "ToolTip": "D:\\Sallie\\Study\\Unity\\RPG_001\\Assets\\Scripts\\Quest_Scripts\\Quest_Event.cs",
               "RelativeToolTip": "Assets\\Scripts\\Quest_Scripts\\Quest_Event.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA5AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-26T01:27:04.803Z",
               "IsPinned": true,

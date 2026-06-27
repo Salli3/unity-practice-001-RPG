@@ -3792,6 +3792,7 @@ MonoBehaviour:
   - {fileID: 1940228441}
   - {fileID: 772101309}
   - {fileID: 2129056104}
+  noAvailableQuestSO: {fileID: 11400000, guid: fb1c284b2dfc1c744ad1f418919a30e0, type: 2}
   questCanvas: {fileID: 579276376}
   acceptCanvas: {fileID: 1484664404}
   declineCanvas: {fileID: 142955240}
@@ -5142,7 +5143,7 @@ Tilemap:
       - {fileID: -1154209477, guid: 3cf300d7376e8914e8db9e79a522e095, type: 3}
       - {fileID: 2026864186, guid: 3cf300d7376e8914e8db9e79a522e095, type: 3}
       - {fileID: -1920691373, guid: 3cf300d7376e8914e8db9e79a522e095, type: 3}
-      m_AnimationSpeed: 5.0000005
+      m_AnimationSpeed: 5
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 0, y: 6, z: 0}
@@ -9047,7 +9048,7 @@ Tilemap:
       - {fileID: 2043837817, guid: ea0e43bffbefd054ca969a1c37be3613, type: 3}
       - {fileID: -529771955, guid: ea0e43bffbefd054ca969a1c37be3613, type: 3}
       - {fileID: -415126571, guid: ea0e43bffbefd054ca969a1c37be3613, type: 3}
-      m_AnimationSpeed: 5
+      m_AnimationSpeed: 5.0000005
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 18, y: -5, z: 0}
@@ -9167,7 +9168,7 @@ Tilemap:
       - {fileID: 2043837817, guid: ea0e43bffbefd054ca969a1c37be3613, type: 3}
       - {fileID: -529771955, guid: ea0e43bffbefd054ca969a1c37be3613, type: 3}
       - {fileID: -415126571, guid: ea0e43bffbefd054ca969a1c37be3613, type: 3}
-      m_AnimationSpeed: 5.0000005
+      m_AnimationSpeed: 5
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 17, y: 6, z: 0}
@@ -17073,6 +17074,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   questToOffer: {fileID: 11400000, guid: 643e6939965632f488a716387890113e, type: 2}
+  questToTurnIn: {fileID: 11400000, guid: 643e6939965632f488a716387890113e, type: 2}
 --- !u!1001 &1940228439
 PrefabInstance:
   m_ObjectHideFlags: 0

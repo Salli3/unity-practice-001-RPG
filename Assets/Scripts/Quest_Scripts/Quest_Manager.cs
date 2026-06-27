@@ -6,16 +6,74 @@ public class Quest_Manager : MonoBehaviour
 {
     private Dictionary<Quest_SO, Dictionary<Quest_Objective, int>> questProgress = new();
 
+    private void OnEnable()
+    {
+        Quest_Event.IsQuestCompleted += IsQuestComplete;
+    }
+
+    private void OnDisable()
+    {
+        Quest_Event.IsQuestCompleted -= IsQuestComplete;
+    }
+
+    #region Quest accept logic
+    public bool IsQuestAccepted(Quest_SO questSO)
+    {
+        return questProgress.ContainsKey(questSO);
+    }
+
     public List<Quest_SO> GetActiveQuests()
     {
         return new List<Quest_SO>(questProgress.Keys);
     }
 
+    public void AcceptQuest(Quest_SO questSO)
+    {
+        questProgress[questSO] = new Dictionary<Quest_Objective, int>();
+
+        foreach (var objective in questSO.objectives)
+        {
+            UpdateObjectiveProgress(questSO, objective);
+        }
+    }
+    #endregion
+
+    #region Quest complete methods
+    public bool IsQuestComplete(Quest_SO questSO)
+    {
+        if (questProgress.TryGetValue(questSO, out var progressDictionary) == false)
+        {
+            return false;
+        }
+
+        foreach (var objective in questSO.objectives)
+        {
+            UpdateObjectiveProgress(questSO, objective);
+        }
+
+        foreach (var objective in questSO.objectives)
+        {
+            if (progressDictionary[objective] < objective.requiredAmount)
+            {
+                return false;
+            }
+        }
+
+        return true;
+    }
+
+    public void CompleteQuest(Quest_SO questSO)
+    {
+        questProgress.Remove(questSO);
+        //TODO granting reward
+    }
+    #endregion
+
     public void UpdateObjectiveProgress(Quest_SO questSO, Quest_Objective objective)
     {
         if (!questProgress.ContainsKey(questSO))
         {
-            questProgress[questSO] = new Dictionary<Quest_Objective, int>();
+            return;
         }
 
         var progressDictionary = questProgress[questSO];
@@ -35,7 +93,6 @@ public class Quest_Manager : MonoBehaviour
         }
 
         progressDictionary[objective] = newAmount;
-
     }
 
     public string GetProgressText(Quest_SO questSO, Quest_Objective objective)
@@ -66,15 +123,5 @@ public class Quest_Manager : MonoBehaviour
             }
         }
         return 0;
-    }
-
-    public void AcceptQuest(Quest_SO questSO)
-    {
-        questProgress[questSO] = new Dictionary<Quest_Objective, int>();
-
-        foreach (var objective in questSO.objectives)
-        {
-            UpdateObjectiveProgress(questSO, objective);
-        }
     }
 }

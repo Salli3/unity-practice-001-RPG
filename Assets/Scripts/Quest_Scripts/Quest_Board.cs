@@ -5,13 +5,24 @@ using UnityEngine;
 public class Quest_Board : MonoBehaviour
 {
     [SerializeField] private Quest_SO questToOffer;
+    [SerializeField] private Quest_SO questToTurnIn;
+
     private bool playerInRange;
 
     private void Update()
     {
         if (playerInRange && Input.GetButtonDown("Interact"))
         {
-            Quest_Event.OnQuestOfferRequested?.Invoke(questToOffer);
+            bool canTurnIn = questToTurnIn != null && Quest_Event.IsQuestCompleted?.Invoke(questToTurnIn) == true;
+
+            if (canTurnIn)
+            {
+                Quest_Event.OnQuestTurnInRequested?.Invoke(questToTurnIn);
+            }
+            else
+            {
+                Quest_Event.OnQuestOfferRequested?.Invoke(questToOffer);
+            }           
         }
     }
 
