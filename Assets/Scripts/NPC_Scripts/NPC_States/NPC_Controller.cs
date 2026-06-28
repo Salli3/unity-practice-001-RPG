@@ -11,8 +11,11 @@ public class NPC_Controller : MonoBehaviour
     public NPC_Wander wander;
     public NPC_Talk talk;
 
+    private Rigidbody2D rb;
+
     private void Start()
     {
+        rb = GetComponent<Rigidbody2D>();
         defaultState = currentState;
         ChangeState(currentState);
     }
@@ -21,7 +24,16 @@ public class NPC_Controller : MonoBehaviour
     {
         currentState = newState;
 
-        patrol.enabled = newState == NPCState.Patrol;
+        if(currentState == NPCState.Idle)
+        {
+            rb.isKinematic = true;
+        }
+        else
+        {
+            rb.isKinematic= false;
+        }
+
+            patrol.enabled = newState == NPCState.Patrol;
         wander.enabled = newState == NPCState.Wander;
         talk.enabled = newState == NPCState.Talk;
     }

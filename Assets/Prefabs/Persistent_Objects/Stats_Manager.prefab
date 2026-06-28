@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1496901910719683404
+--- !u!1 &9212378493599354161
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,45 +8,51 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2696766964903021359}
-  - component: {fileID: 2120351674534031047}
+  - component: {fileID: 4060467949427859331}
+  - component: {fileID: 822552466465539781}
   m_Layer: 0
-  m_Name: Game_Manager
+  m_Name: Stats_Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2696766964903021359
+--- !u!4 &4060467949427859331
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1496901910719683404}
+  m_GameObject: {fileID: 9212378493599354161}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.803908, y: -1.8191028, z: -0.053145196}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2120351674534031047
+--- !u!114 &822552466465539781
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1496901910719683404}
+  m_GameObject: {fileID: 9212378493599354161}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4073c8c66643fe4295c3becaf641a68, type: 3}
+  m_Script: {fileID: 11500000, guid: 0dbff55f00907ae4990de45de7c822d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  persistentObjects:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  hpText: {fileID: 0}
+  statsUI: {fileID: 0}
+  attackRange: 1
+  damage: 1
+  knockbackForce: 10
+  knockbackTime: 0.1
+  stunTime: 0.2
+  cooldown: 2
+  speed: 5
+  currentHP: 100
+  maxHP: 100
+  expGain: 100
