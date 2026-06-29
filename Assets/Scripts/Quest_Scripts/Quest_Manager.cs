@@ -5,6 +5,8 @@ using UnityEngine;
 public class Quest_Manager : MonoBehaviour
 {
     private Dictionary<Quest_SO, Dictionary<Quest_Objective, int>> questProgress = new();
+    private Dictionary<Quest_SO, Dictionary<Quest_Objective, int>> questsToOffer = new();
+
     private List<Quest_SO> completedQuests = new();
 
     private void OnEnable()
@@ -15,6 +17,21 @@ public class Quest_Manager : MonoBehaviour
     private void OnDisable()
     {
         Quest_Event.IsQuestCompleted -= IsQuestComplete;
+    }
+
+    public List<Quest_SO> GetQuestOffer()
+    {
+        return new List<Quest_SO>(questsToOffer.Keys);
+    }
+
+    public void OfferQuest(Quest_SO questSO)
+    {
+        questsToOffer[questSO] = new Dictionary<Quest_Objective, int>();
+
+        foreach (var objective in questSO.objectives)
+        {
+            UpdateObjectiveProgress(questSO, objective);
+        }
     }
 
     #region Quest accept logic
@@ -31,6 +48,8 @@ public class Quest_Manager : MonoBehaviour
     public void AcceptQuest(Quest_SO questSO)
     {
         questProgress[questSO] = new Dictionary<Quest_Objective, int>();
+
+        questsToOffer.Remove(questSO);
 
         foreach (var objective in questSO.objectives)
         {
@@ -63,8 +82,10 @@ public class Quest_Manager : MonoBehaviour
         return true;
     }
 
+    //add the completed quest to a list and give reward
     public void CompleteQuest(Quest_SO questSO)
     {
+        questsToOffer.Remove(questSO);
         questProgress.Remove(questSO);
         completedQuests.Add(questSO);
         foreach (var reward in questSO.rewards)
@@ -73,6 +94,7 @@ public class Quest_Manager : MonoBehaviour
         }
     }
 
+    //return true if the quest is in the completed list
     public bool GetCompletedQuest(Quest_SO questSO)
     {
         return completedQuests.Contains(questSO);

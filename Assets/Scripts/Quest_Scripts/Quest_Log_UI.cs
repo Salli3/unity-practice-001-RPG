@@ -44,46 +44,79 @@ public class Quest_Log_UI : MonoBehaviour
     }
 
     #region Show quest methods
+    //show the quest to offer
     public void ShowQuestOffer(Quest_SO incomingQuestSO)
     {
+        //check if the quest is already accepted or completed (if yes then show an empty quest)
+        //TODO make a quest list to remove it from
         if (questManager.IsQuestAccepted(incomingQuestSO) || questManager.GetCompletedQuest(incomingQuestSO))
         {
             questSO = noAvailableQuestSO;
 
             SetCanvasState(acceptCanvas, false);
-            SetCanvasState(declineCanvas, true);
+            SetCanvasState(declineCanvas, false);
             SetCanvasState(completeCanvas, false);
         }
         else
         {
+            questManager.OfferQuest(incomingQuestSO);
             questSO = incomingQuestSO;
             SetCanvasState(acceptCanvas, true);
             SetCanvasState(declineCanvas, true);
             SetCanvasState(completeCanvas, false);
         }
-        HandleQuestClicked(questSO);
+        RefreshQuestList();
+        HandleQuestClicked(questSO);     
         SetCanvasState(questCanvas, true);
     }
 
+    public void RefreshQuestList()
+    {
+        List<Quest_SO> questsOffer = questManager.GetQuestOffer();
+        //List<Quest_SO> activeQuests = questManager.GetActiveQuests();
+
+        for (int i = 0; i < questSlots.Length; i++)
+        {
+            if (i < questsOffer.Count)
+            {
+                questSlots[i].SetQuest(questsOffer[i]);
+            }
+            else
+            {
+                questSlots[i].ClearSlot();
+            }
+        }
+    }
+
+    //show the quest that already done but not claim reward
     public void ShowQuestTurnIn(Quest_SO incomingQuestSO)
     {
         Debug.Log($"Show quest turning in: {incomingQuestSO}");
         questSO = incomingQuestSO;
+        questManager.OfferQuest(incomingQuestSO);
+
+        RefreshQuestList();
         HandleQuestClicked(questSO);
 
         SetCanvasState(questCanvas, true);
         SetCanvasState(acceptCanvas, false);
         SetCanvasState(declineCanvas, false);
-        SetCanvasState(completeCanvas, true);
+        SetCanvasState(completeCanvas, true);    
     }
     #endregion
 
     #region Button clicked methods
+    public void OnCloseQuestButtonClicked()
+    {
+        SetCanvasState(questCanvas, false);
+    }
+
     public void OnAcceptQuestClicked()
     {
         questManager.AcceptQuest(questSO);
-        SetCanvasState(completeCanvas, false);
         SetCanvasState(acceptCanvas, false);
+        SetCanvasState(declineCanvas, false);
+        SetCanvasState(completeCanvas, false);
         RefreshQuestList();
         HandleQuestClicked(noAvailableQuestSO);
     }
@@ -103,23 +136,6 @@ public class Quest_Log_UI : MonoBehaviour
     }
     #endregion
 
-    public void RefreshQuestList()
-    {
-        List<Quest_SO> activeQuests = questManager.GetActiveQuests();
-
-        for (int i = 0; i < questSlots.Length; i++)
-        {
-            if (i < activeQuests.Count)
-            {
-                questSlots[i].SetQuest(activeQuests[i]);
-            }
-            else
-            {
-                questSlots[i].ClearSlot();
-            }
-        }
-    }
-
     private void SetCanvasState(CanvasGroup canvasGroup, bool activate)
     {
         canvasGroup.alpha = activate ? 1 : 0;
@@ -131,6 +147,7 @@ public class Quest_Log_UI : MonoBehaviour
     //display quest info on info panel
     public void HandleQuestClicked(Quest_SO questSO)
     {
+        Debug.Log($"Handling {questSO} info");
         this.questSO = questSO;
 
         questNameText.text = questSO.questName;
@@ -138,6 +155,25 @@ public class Quest_Log_UI : MonoBehaviour
 
         DisplayObjectives();
         DisplayReward();
+
+        //disable quest button if its info is showing
+        foreach (var slot in questSlots)
+        {
+            //null check
+            if (slot.currentQuest == null)
+            {
+                continue;
+            }
+
+            if (slot.currentQuest == questSO)
+            {
+                slot.questButton.interactable = false;
+            }
+            else
+            {
+                slot.questButton.interactable = true;
+            }
+        }
     }
 
     //display objectives on info panel

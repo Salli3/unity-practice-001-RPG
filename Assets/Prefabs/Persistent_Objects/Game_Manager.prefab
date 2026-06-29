@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &8766013984256926674
+--- !u!1 &9183095312417438405
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,22 +8,22 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8397598333836734919}
-  - component: {fileID: 8556163410730424188}
+  - component: {fileID: 8055938266532124241}
+  - component: {fileID: 3302001449947751359}
   m_Layer: 0
-  m_Name: Stats_Manager
+  m_Name: Game_Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8397598333836734919
+--- !u!4 &8055938266532124241
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8766013984256926674}
+  m_GameObject: {fileID: 9183095312417438405}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -32,27 +32,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8556163410730424188
+--- !u!114 &3302001449947751359
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8766013984256926674}
+  m_GameObject: {fileID: 9183095312417438405}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0dbff55f00907ae4990de45de7c822d6, type: 3}
+  m_Script: {fileID: 11500000, guid: d4073c8c66643fe4295c3becaf641a68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hpText: {fileID: 0}
-  statsUI: {fileID: 0}
-  attackRange: 1
-  damage: 1
-  knockbackForce: 10
-  knockbackTime: 0.1
-  stunTime: 0.2
-  cooldown: 2
-  speed: 5
-  currentHP: 100
-  maxHP: 100
-  expGain: 100
+  dialogManager: {fileID: 0}
+  dialogHistoryTracker: {fileID: 0}
+  locationHistoryTracker: {fileID: 0}
+  persistentObjects:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
